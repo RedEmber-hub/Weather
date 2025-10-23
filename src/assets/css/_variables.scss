@@ -1,0 +1,15 @@
+:root {
+  // Цвета
+  --color-background: linear-gradient(90deg, rgba(5, 38, 82, 1), rgba(45, 156, 219, 1));
+  --color-primary: #fff;
+  --color-secondary: rgba(233, 233, 243, 0.6);
+
+  // обязательные цвета
+  --color-black: #000;
+  --color-white: #fff;
+  --color-transparent: rgba(0, 0, 0, 0);
+
+  // Анимация
+  --transition-speed: 0.15s;
+  --transition-function: ease-in-out;
+}
