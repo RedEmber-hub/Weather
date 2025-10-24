@@ -1,0 +1,33 @@
+@use 'mixins' as *;
+
+.body-small {
+  @include body-small();
+}
+
+.body {
+  @include body();
+}
+
+.subtitle {
+  @include subtitle();
+}
+
+.subtitle-lg {
+  @include subtitle-lg();
+}
+
+.heading-sm {
+  @include heading-sm();
+}
+
+.heading {
+  @include heading();
+}
+
+.hero {
+  @include hero();
+}
+
+.display {
+  @include display();
+}

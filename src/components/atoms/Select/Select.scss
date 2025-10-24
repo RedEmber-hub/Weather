@@ -1,0 +1,39 @@
+.select {
+  flex-direction: column;
+  width: 100%;
+
+  gap: 12px;
+
+  &__selection {
+    gap: 10px;
+
+    padding: 10px 16px;
+
+    align-items: center;
+
+    background-color: rgba(var(--color-primary-rgb), 0.1);
+
+    border-radius: 8px;
+  }
+
+  &__label {
+    width: 100%;
+  }
+
+  &__icon {
+    &--rotated {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__list {
+    background-color: rgba(var(--color-primary-rgb), 0.1);
+
+    list-style: none;
+    border-radius: 8px;
+  }
+
+  &__item {
+    padding: 10px 16px;
+  }
+}

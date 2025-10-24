@@ -1,0 +1,31 @@
+/* GeologicaRoman */
+
+@font-face {
+  font-family: 'Geologica';
+  src: local('Geologica Roman Medium'), local('Geologica-Roman-Medium'),
+    url('@/assets/fonts/geologica/GeologicaRoman-Medium.woff2') format('woff2'),
+    url('@/assets/fonts/geologica/GeologicaRoman-Medium.woff') format('woff'),
+    url('@/assets/fonts/geologica/GeologicaRoman-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geologica';
+  src: local('Geologica Roman Regular'), local('Geologica-Roman-Regular'),
+    url('@/assets/fonts/geologica/GeologicaRoman-Regular.woff2') format('woff2'),
+    url('@/assets/fonts/geologica/GeologicaRoman-Regular.woff') format('woff'),
+    url('@/assets/fonts/geologica/GeologicaRoman-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geologica';
+  src: local('Geologica Roman Bold'), local('Geologica-Roman-Bold'),
+    url('@/assets/fonts/geologica/GeologicaRoman-Bold.woff2') format('woff2'),
+    url('@/assets/fonts/geologica/GeologicaRoman-Bold.woff') format('woff'),
+    url('@/assets/fonts/geologica/GeologicaRoman-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

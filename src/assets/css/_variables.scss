@@ -1,12 +1,19 @@
 :root {
   // Цвета
   --color-background: linear-gradient(90deg, rgba(5, 38, 82, 1), rgba(45, 156, 219, 1));
+
   --color-primary: #fff;
+  --color-primary-rgb: 255, 255, 255;
+
   --color-secondary: rgba(233, 233, 243, 0.6);
 
   // обязательные цвета
   --color-black: #000;
+  --color-black-rgb: 0, 0, 0;
+
   --color-white: #fff;
+  --color-white-rgb: 255, 255, 255;
+
   --color-transparent: rgba(0, 0, 0, 0);
 
   // Анимация

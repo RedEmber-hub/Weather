@@ -1,2 +1,6 @@
-@forward 'variables';
-@forward 'common';
+@forward './variables';
+@forward './fonts';
+@forward './typo';
+@forward './mixins';
+@forward './common';
+@forward './colors';

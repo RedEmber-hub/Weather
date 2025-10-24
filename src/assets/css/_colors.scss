@@ -1,0 +1,9 @@
+.text-color {
+  &--white {
+    color: var(--color-white) !important;
+  }
+
+  &--black {
+    color: var(--color-black) !important;
+  }
+}

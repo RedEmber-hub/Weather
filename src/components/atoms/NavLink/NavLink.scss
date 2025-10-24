@@ -1,0 +1,19 @@
+@use '@/assets/css/mixins' as *;
+
+.nav-link {
+  display: inline-block;
+
+  width: 100%;
+
+  padding: 10px 16px;
+
+  background-color: rgba(var(--color-white-rgb), 0.1);
+  text-decoration: none;
+  color: rgba(var(--color-white-rgb), 0.4);
+
+  @include body();
+
+  &--active {
+    color: var(--color-white);
+  }
+}
