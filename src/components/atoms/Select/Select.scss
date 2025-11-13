@@ -2,8 +2,6 @@
   flex-direction: column;
   width: 100%;
 
-  gap: 12px;
-
   &__selection {
     gap: 10px;
 
@@ -27,13 +25,21 @@
   }
 
   &__list {
+    position: absolute;
+    top: calc(100% + 12px);
+
     background-color: rgba(var(--color-primary-rgb), 0.1);
 
+    width: 100%;
     list-style: none;
     border-radius: 8px;
   }
 
   &__item {
     padding: 10px 16px;
+
+    &:hover {
+      background-color: rgba(var(--color-white-rgb), 0.2);
+    }
   }
 }

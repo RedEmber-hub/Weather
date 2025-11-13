@@ -3,8 +3,6 @@
 .nav-link {
   display: inline-block;
 
-  width: 100%;
-
   padding: 10px 16px;
 
   background-color: rgba(var(--color-white-rgb), 0.1);
@@ -12,6 +10,10 @@
   color: rgba(var(--color-white-rgb), 0.4);
 
   @include body();
+
+  & + .nav-link {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+  }
 
   &--active {
     color: var(--color-white);

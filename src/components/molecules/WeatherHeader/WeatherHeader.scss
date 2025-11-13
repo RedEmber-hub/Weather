@@ -1,0 +1,19 @@
+.weather {
+  &__header {
+    width: 100%;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__navlink-container {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__select {
+    position: relative;
+
+    min-width: 256px;
+  }
+}
