@@ -1,13 +1,12 @@
 import { useState, useRef, useEffect } from 'react';
 import './Select.scss';
-import { SelectProps, SelectInterface } from './Select.type';
+import { SelectProps } from './Select.type';
 import classNames from 'classnames';
 import { Icon } from '../Icon';
+import { OptionInterface } from '@/components/molecules/WeatherHeader/WeatherHeader.type';
 
-export default function Select({ options = [], placeholder = 'Выберите...' }: SelectProps) {
+export default function Select({ options = [], value, onChange, placeholder = 'Выберите...' }: SelectProps) {
   const [isOpen, setIsOpen] = useState(false);
-  // Выбранный элемент { value: 'moscow', label: 'Москва' }
-  const [selected, setSelected] = useState<SelectInterface | null>(null);
   // получение ссылки на элемент
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
@@ -37,8 +36,8 @@ export default function Select({ options = [], placeholder = 'Выберите..
   }, []);
 
   // Выбор опции и закрытие селекта
-  function handleSelect(option: SelectInterface) {
-    setSelected(option);
+  function handleSelect(option: OptionInterface) {
+    onChange(option);
     setIsOpen(false);
   }
 
@@ -52,7 +51,7 @@ export default function Select({ options = [], placeholder = 'Выберите..
         <div className="select__label">
           <span className="body body--medium text-color--white cursor-pointer">
             {/* selected = { value: 'moscow', label: 'Москва' } */}
-            {selected ? selected.label : placeholder}
+            {value ? value.label : placeholder}
           </span>
         </div>
 
@@ -66,7 +65,7 @@ export default function Select({ options = [], placeholder = 'Выберите..
           {options.map((option) => {
             const selectedOptionClassName = classNames({
               select__item: true,
-              'select__item--selected': selected?.value === option.value,
+              'select__item--selected': value?.value === option.value,
             });
 
             return (

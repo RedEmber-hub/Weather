@@ -1,9 +1,8 @@
-export interface SelectInterface {
-  value: string;
-  label: string;
-}
+import { OptionInterface } from '@/components/molecules/WeatherHeader/WeatherHeader.type';
 
 export interface SelectProps {
-  options: SelectInterface[];
+  options: OptionInterface[];
+  value: OptionInterface;
+  onChange: (selectedOption: OptionInterface) => void;
   placeholder: string;
 }

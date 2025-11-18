@@ -1,5 +1,6 @@
 import { WeatherHeader } from '@/components/molecules/WeatherHeader';
 import './Weather.scss';
+import { useState } from 'react';
 
 export default function Weather() {
   const options = [
@@ -9,5 +10,7 @@ export default function Weather() {
     { value: 'ufa', label: 'Уфа' },
   ];
 
-  return <WeatherHeader options={options} />;
+  const [selectedCity, setSelectedCity] = useState(options[0]);
+
+  return <WeatherHeader options={options} selectedCity={selectedCity} onCityChange={setSelectedCity} />;
 }
